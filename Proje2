@@ -1,0 +1,30 @@
+[16,21,11,8,12,22] -> Merge Sort
+  
+  A)  Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+  Insertion sort'a göre:
+En küçük sayı bulunur en başa yazılır 2. sayı için seçilen sayının solundaki sayılar es geçilerek sayıların büyüklük küçüklüklerine bakılır ve en küçük tekrar 2. sıraya yazılır
+işlem dizideki sayılar yerine yerleştirilene akdar devam eder.
+
+[16,21,11,8,12,22]
+
+8,21,11,16,12,22
+8,11,21,16,12,22
+8,11,12,16,21,22
+dizi bu duruma gelince bilgisayar 16,21,22 için de aynı işlemleri yapar lakin yerine olduğu için çıktı da aynıdır.
+
+  Merge sort'a göre:
+
+Bir diziyi adım adım paraçalara tek eleman kalana kadar parçalara ayırır , parçalara ayırdıktan sonra birleştirir.
+
+16,21,11 / 8,12,22
+16  /   21,11   /   8  /  12, 22
+16  /   11  /  21  /  8 /  12 /  22
+16  /  11,21  /  8   / 12,22
+11,16,21   /   8,12,22
+8,11,12,16,21,22
+  
+  
+  
+  B)  Big-O gösterimini yazınız.
+  
+  Big-O gösterimi : O(nlogn)
